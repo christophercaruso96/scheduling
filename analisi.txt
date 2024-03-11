@@ -1,0 +1,23 @@
+Per gli schemi è stato usato draw.io
+
+ANALISI monotasking.png 
+
+Rappresentazione dello scheduling di 4 processi.
+Nei tempi di waiting il processore non esegue operazioni.
+Grave spreco in termini di prestazioni.
+Tempo totale di esecuzione: 15s.
+
+ANALISI multitasking.png
+
+Rappresentazione dello scheduling di 4 processi.
+Nei tempi di waiting il processore mette in running il processo successivo.
+Se i processi che precedono hanno un buon match sui tempi di attesa, un processo potrebbe aspettare diverso tempo prima di essere messo in coda.
+Esempio P3 viene messo in coda dopo 6s.
+
+ANALISI timesharing.png
+
+Rappresentazione dello scheduling di 4 processi.
+Vengono eseguiti i processi secondo il principio di funzionamento del timesharing, 1 quanto = 1s.
+Ottimizzazione rispetto al multitasking: dopo 3s P3 è concluso 
+(in questo caso il tempo totale di esecuzione è lo stesso ma potrebbe essere ridotto notevolmente in altri casi).
+
